@@ -1,5 +1,35 @@
 public class TimeCalc {
     public static void main(String[] args) {
-        // Replace this comment with your code
+        int origin_hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
+		// Does the same with the minutes part of the input.
+		int origin_minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
+        int minutes_to_add = Integer.parseInt(args[1]);
+        int total_minutes = (origin_hours*60) + origin_minutes + minutes_to_add;
+        int total_hours = total_minutes / 60;
+        int new_hours = total_hours % 24;
+        int new_minutes = total_minutes - (total_hours * 60);
+        if (new_minutes < 10) 
+        {   
+            if (new_hours < 10)
+            {
+                System.out.println("0" + new_hours + ":0" + new_minutes);
+            } 
+            else 
+            {
+                System.out.println(new_hours + ":0" + new_minutes);
+            }
+        } 
+        else 
+        {
+             if (new_hours < 10)
+             {
+                System.out.println("0" + new_hours + ":" + new_minutes);
+             } 
+            else 
+            {
+                System.out.println(new_hours + ":" + new_minutes);
+            }
+        } 
+
     }
 }
