@@ -25,11 +25,10 @@ public class Collatz {
 					}
 					steps = steps + 1;
 				}
-				System.out.print(" (" + steps + ")");
+				System.out.print("(" + steps + ")");
 				System.out.println();
 				c = c + 1;
 			}
-			System.out.println();
 			System.out.println("Every one of the first " + n + " hailstone sequences reached 1.");
 		}
 		else
