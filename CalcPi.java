@@ -27,7 +27,7 @@ public class CalcPi {
 			count++;
 		}
 		double new_pi = new_pi4 * 4.0;
-		System.out.println("pi according to java: " + pi);
+		System.out.println("pi according to Java: " + pi);
 		System.out.println("pi, approximated:     " + new_pi);
 	}
 }
